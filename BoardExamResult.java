@@ -2,6 +2,8 @@ import java.util.Scanner;
 public class BoardExamResult {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the total marks:");
+        byte tm = sc.nextByte();
         System.out.println("Enter the marks for Maths : ");
         byte m1 = sc.nextByte();
 
@@ -17,12 +19,12 @@ public class BoardExamResult {
         System.out.println("Enter the marks for Science : ");
         byte m5 = sc.nextByte();
 
-        int sum = m1 + m2 + m3 + m4 + m5;
+        float sum = ( m1 + m2 + m3 + m4 + m5 );
         System.out.print("The Total marks are ");
-        System.out.print(sum);
-        float percenTage = (sum / 5);
-        System.out.println(" ");
+        System.out.println(sum);
 
+        float percenTage =((sum) / ( tm * 5.0f)*100);
+        
         System.out.print("Result is ");
         System.out.print(percenTage+"%");
     }
