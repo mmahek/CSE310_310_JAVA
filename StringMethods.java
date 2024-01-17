@@ -37,7 +37,7 @@ public class StringMethods {
         // .endsWith()
         System.out.println(name.endsWith("ma"));
 
-        // .charAt() -> rezturns the character at 
+        // .charAt() -> returns the character at 
         System.err.println(name.charAt(4));
 
         // .indexOf() -> returns the 1st index of start of string - returns -1 when not found
