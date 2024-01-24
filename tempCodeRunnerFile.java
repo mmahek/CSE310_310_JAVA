@@ -1,2 +1,2 @@
-  // System.out.println("a = " + a);
-        
+System.out.println(marks[2]);
+        //  S
