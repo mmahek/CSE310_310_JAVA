@@ -17,11 +17,11 @@ public class PracticeSetCH6 {
         }
         System.out.println("Sum = " + sum);*/
 
-        /*Question 2: */
+        /*Question 2: 
         // Scanner s = new Scanner(System.in);
         // System.out.print("Enter the name to search: ");
         // String nameToSearch = s.nextLine();
-        String nameToSearch = "mishka";
+        String nameToSearch = "ahem";
         String [] sectionGM = {"mahek", "arjun", "aaradhya", "bhim", "suraj", "mishka"};
         //sectionGM = new String[11];
         
@@ -32,17 +32,35 @@ public class PracticeSetCH6 {
         // for(int j = 0 ; j < 11 ; j++){
         //     System.out.println("sectionGM["+j+"]="+sectionGM[j]);
         // } 
+        int flag = 0;
         for (int j = 0; j < 6; j++) {
             if(sectionGM[j] == nameToSearch){
-                System.out.println("sectionGM[" + j + "]=" + sectionGM[j]);
-                System.out.println("yes! match found");
+                System.out.println("sectionGM[" + j + "] = " + sectionGM[j]);
+                
+                flag = 1;
                 break;
             }
-            else{
-                System.out.println("sorry");
-            }
-            
         }
-
+        if (flag == 0) {
+            System.err.println("Sorry, no match found!");
+        }else{
+            System.out.println("yes! match found");
+        }
+    */
+        /*Question 3: */
+        Scanner m = new Scanner(System.in);
+        System.err.print("Enter the strength of students: ");
+        int strengthOfStudents = m.nextInt();
+        int [] physicsMarks ;
+        int sum = 0;
+        physicsMarks = new int[strengthOfStudents];
+        System.err.println("Enter the marks: ");
+        for(int i = 0 ; i < strengthOfStudents ; i++){
+            System.out.print("physicsMarks[" + i + "] =");
+            physicsMarks[i] = m.nextInt();
+            sum = sum + physicsMarks[i];
+        }
+            System.out.println("Sum of marks : " + sum);
+            System.out.println("Average marks :  " + sum/strengthOfStudents);
     }
 }
