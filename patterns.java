@@ -1,41 +1,43 @@
 public class patterns {
-    public static void main(String[] args) {
-        // int i = 1;
-        // while (i <= 5) {
-        //     if (i == 3)
-        //         continue;
-        //     System.out.print(i);
-        //     i++;
-        // }
-        
+    static void pattern1(int m){
         int n = 1;
-        while(n<5){// run the following 4 times
-            for(int j = 1 ; j < 5 ; j++){
-                System.out.print(n);// 4 4 4 4
-            }
-            System.out.println();// \n
-            n++;
-        }
-        // 1111
-        // 2222
-        // 3333
-        // 4444
-        n = 1;
-
+        System.out.println("Pattern 1: ");
         while (n < 5) {// run the following 4 times
-            for (int j = 1; j < 5; j++) {
-                System.out.print(j);// 4 4 4 4
+            for (int j = 1; j <= m; j++) {
+                System.out.print(n + " ");// 4 4 4 4
             }
             System.out.println();// \n
             n++;
         }
-        // 1234
-        // 1234
-        // 1234
-        // 1234
-        for(int i = 0 ; i < 5 ; i++ ){
-            for(int j = 0 ; j < i ; j++){
-                System.out.print(i);
+        // 1 1 1 1
+        // 2 2 2 2
+        // 3 3 3 3
+        // 4 4 4 4
+        System.out.println();
+    }
+
+    static void pattern2(int m){
+        int n = 1;
+        System.out.println("Pattern 2: ");
+        while (n < 5) {// run the following 4 times
+            for (int j = 1; j <= m; j++) {
+                System.out.print(j + " ");// 4 4 4 4
+            }
+            System.out.println();// \n
+            n++;
+        }
+        // 1 2 3 4
+        // 1 2 3 4 
+        // 1 2 3 4
+        // 1 2 3 4
+        System.out.println();
+    }
+
+    static void pattern3(int m){
+        System.out.println("Pattern 3: ");
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
             }
             System.out.println();
         }
@@ -43,121 +45,60 @@ public class patterns {
         // 22
         // 333
         // 4444
-        for(int m = 1 ; m < 4 ; m++){
-            for(int l = 1 ; l < m ; l++){
-                System.out.print(l);
+        System.out.println();
+    }
+    static void pattern4(int m){
+        System.out.println("Pattern 4: ");
+        for (int i = 1; i <= m; i++) {
+            for (int l = 1; l <= i; l++) {
+                System.out.print(l + " ");
             }
             System.out.println();
         }
+        // 1
+        // 12
+        // 123
+        // 1234
+        System.out.println();
+    }
+    static void pattern5(int n){
+        System.out.println("Pattern 5: ");
+        for(int i = 0 ; i < 4 ; i++){
+            for(int j = 0 ; j < n ; j++){
+                System.out.print("4 ");
+            }
+            System.out.println();
+        }
+        // 4 4 4 4 
+        // 4 4 4 4
+        // 4 4 4 4
+        // 4 4 4 4
+        System.out.println();
+    }
+
+    static void pattern6(int n){
+        System.out.println("Pattern 6: ");
+        int m = 1;
+        for(int i = 1 ; i <= 4 ; i++){ // Line Change
+            for(int j = 1 ; j <= i ; j++){ // No of terms printed
+                System.out.print(m + " ");
+                m++; // increment 
+            }
+            System.out.println();
+        }
+        // 1
+        // 2 3
+        // 4 5 6
+        // 7 8 9 10
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        pattern1(4);
+        pattern2(4);
+        pattern3(4);
+        pattern4(4);
+        pattern5(4);
+        pattern6(4);
     }
 }
-
-// // //patern 1
-// // //4 4 4 4
-// // //4 4 4 4
-// // //4 4 4 4
-// // //4 4 4 4
-// // // int n=4;
-// // // for(int i=1;i<=n;i++){
-// // // for(int j=1;j<=n;j++){
-// // // System.out.print(n);
-// // // }
-// // // System.out.println();
-// // // }
-
-// // //pattern 2
-// // //1 2 3 4
-// // //1 2 3 4
-// // //1 2 3 4
-// // //1 2 3 4
-// // // int n=4;
-// // // int i=1;
-// // // while(i<=n){
-// // // int j=1;
-// // // while(j<=n){
-// // // System.out.print(j);
-// // // j++;
-// // // }
-// // // System.out.println();
-// // // i++;
-// // // }
-
-// // //pattern 3
-// // //1 1 1 1
-// // //2 2 2 2
-// // //3 3 3 3
-// // //4 4 4 4
-// // int n=4;
-// // int i=1;
-// // while(i<=n){
-// // int j=1;
-// // while(j<=n){
-// // System.out.print(i);
-// // j++;
-// // }
-// // System.out.println();
-// // i++;
-// // }
-// // //pattern 4
-// //1
-// //2 2
-// //3 3 3
-// //4 4 4 4
-// // int n=4;
-// // for(int i=1;i<=n;i++){
-// // for(int j=1;j<=i;j++){
-// // System.out.print(i);
-// // }
-// // System.out.println();
-// // }
-
-// //pattern 5
-// //1
-// //1 2
-// //1 2 3
-// //1 2 3 4
-// // int n=4;
-// // for(int i=1;i<=n;i++){
-// // for(int j=1;j<=i;j++){
-// // System.out.print(j);
-// // }
-// // System.out.println();
-// // }
-
-// //pattern 6
-// // 1
-// // 2 3
-// // 4 5 6
-// // 7 8 9 10
-// int n=4;
-// int a=1;
-// for(int i=1;i<=n;i++){
-// for(int j=1;j<=i;j++){
-// System.out.print(a);
-// a++;
-// }
-// System.out.println();
-// }
-
-// int i=1; //1 2 4 5
-// while(i<=5){
-// if((i)==3) {
-// i++;
-// continue; }
-// System.out.print(i);
-// i++;
-// }
-
-// int i=1;
-// while(i<=5){
-// System.out.print(i);
-// if(i==3) break;
-// i++;
-// }
-
-// for(int i=1;i<=5; i++;){
-// if(i==3) continue;
-// System.out.print(i);
-
-// }
 
