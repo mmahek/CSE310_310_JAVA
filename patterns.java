@@ -92,6 +92,81 @@ public class patterns {
         // 7 8 9 10
         System.out.println();
     }
+
+    static void pattern7(int n){
+        System.out.println("Pattern 7: ");
+        for(int i = 1 ; i <= n ; i++){
+            for(int j = 1 ; j <= n-i ; j++){
+                System.out.print(" ");
+            }
+            
+            for(int  k = 1 ; k <= i ; k++){
+                System.out.print(k + " ");
+            }
+            System.out.println();
+        }
+        //   1
+        //  1 2 
+        // 1 2 3
+        //1 2 3 4
+    }
+    
+    static void pattern8(int n) {
+        System.out.println("Pattern 8: ");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) { /// prints " "
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= i; k++) { // in the same row, k is printed
+                System.out.print(k);
+            }
+            System.out.println();
+        }
+        //    1
+        //   12
+        //  123
+        // 1234
+    }
+    static void pattern9(int n){
+        System.out.println("Pattern 9:");
+        for(int i = 0 ; i < n ; i++){
+            int a = 2*i+1;
+            for(int j = 0 ; j < (n); j++){
+                System.out.print(a + "  ");
+                a+=2;
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern10(int n) {
+        System.out.println("Pattern 10:");
+            for(int i = 1 ;i < 10 ; i++){
+                System.out.print(i);
+            }
+            System.out.println();
+            for(int i = 1 ; i <= 10 ; i++){
+                for(i = 1 ; i<=10 ; i++){
+                    System.out.print(i);
+                }
+            }
+    }
+    static void pattern11(int n){
+        System.out.println("\nPattern 11:");
+        for(int i = 1 ; i <= n ; i++){
+            int c = 2*i-1;
+            if(c > 2*n-1){
+                c = 1;
+                System.out.print(c);
+                c+=2;
+            }
+            else{
+                System.out.print(c);
+                c = c+2;
+            }
+        }
+        //System.out.println();
+    }
     public static void main(String[] args) {
         pattern1(4);
         pattern2(4);
@@ -99,6 +174,11 @@ public class patterns {
         pattern4(4);
         pattern5(4);
         pattern6(4);
+        pattern7(4);
+        pattern8(4);
+        pattern9(4);
+        pattern10(4);
+        pattern11(4);
     }
 }
 
