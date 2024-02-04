@@ -1,3 +1,2 @@
-static void pattern6(int n){
-    //     for()
-    // }
+pattern10(4);
+        // pattern11(4);

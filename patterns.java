@@ -165,7 +165,26 @@ public class patterns {
                 c = c+2;
             }
         }
-        //System.out.println();
+   reating and working with
+formulas     //System.out.println();
+    }
+    static void pattern12(int n){
+        System.out.println("Pattern 12:");
+        for(int i = 1 ; i <= n+4 ; i++){
+            System.out.print("*");
+            for(int j = 1 ; j <= n ; j++){
+                System.out.print("*");
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+        /*
+         * 1 *
+         * 121 *
+         * 12321 *
+         * 121 *
+         * 1 *
+         */
     }
     public static void main(String[] args) {
         pattern1(4);
@@ -177,8 +196,9 @@ public class patterns {
         pattern7(4);
         pattern8(4);
         pattern9(4);
-        pattern10(4);
-        pattern11(4);
+        // pattern10(4);
+        // pattern11(4);
+        pattern12(3);
     }
 }
 
