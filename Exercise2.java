@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Scanner;
 
-public class RockPaperScissors {
+public class Exercise2 {
     public static void main(String[] args) {
         String userInput;
         Scanner sc = new Scanner(System.in);
