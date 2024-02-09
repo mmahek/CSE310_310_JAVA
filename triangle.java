@@ -27,8 +27,9 @@ public class triangle {
         int n = s.nextInt();
 
         for (i = 0; i < n; i++) { // number of rows
-            k = 1; // reseting k for each new row
-            for (j = 0; j < (n + i); j++) { // number of columns in each row
+            k = 1; // rese123
+            ting k for each new row
+            for (j = 0; j < (n + i ); j++) { // number of columns in each row
                 if (j < n - i - 1) // what will be printed in the each column
                     System.out.print("  ");
                 else {
