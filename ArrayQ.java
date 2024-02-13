@@ -79,54 +79,54 @@
 //         }
 //         return -1;
 //     }
-// }
-// import java.util.Scanner;
+//}
+import java.util.Scanner;
 
-// public class ArrayQ {
-//     public static void main(String[] args) {
-//         Scanner scanner = new Scanner(System.in);
+public class ArrayQ {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-//         System.out.print("Enter the size of the array: ");
-//         int size = getInput(scanner);
+        System.out.print("Enter the size of the array: ");
+        int size = getInput(scanner);
 
-//         int[] arr = new int[size];
+        int[] arr = new int[size];
 
-//         System.out.print("Enter the target value: ");
-//         int target = getInput(scanner);
+        System.out.print("Enter the target value: ");
+        int target = getInput(scanner);
 
-//         System.out.println("Enter the elements of the array:");
-//         for (int i = 0; i < size; i++) {
-//             System.out.print("Enter arr[" + i + "]: ");
-//             arr[i] = getInput(scanner);
-//         }
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) {
+            System.out.print("Enter arr[" + i + "]: ");
+            arr[i] = getInput(scanner);
+        }
 
-//         int index = findTargetIndex(arr, target);
+        int index = findTargetIndex(arr, target);
 
-//         if (index == -1) {
-//             System.out.println("Target not present in the array.");
-//         } else {
-//             System.out.println("The Target is found at index " + index);
-//         }
-//     }
+        if (index == -1) {
+            System.out.println("Target not present in the array.");
+        } else {
+            System.out.println("The Target is found at index " + index);
+        }
+    }
 
-//     private static int getInput(Scanner scanner) {
-//         while (!scanner.hasNextInt()) {
-//             System.out.println("Invalid input. Please enter a valid integer.");
-//             scanner.next(); // consume invalid input
-//         }
-//         return scanner.nextInt();
-//     }
+    private static int getInput(Scanner scanner) {
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid input. Please enter a valid integer.");
+            scanner.next(); // consume invalid input
+        }
+        return scanner.nextInt();
+    }
 
-//     private static int findTargetIndex(int[] arr, int target) {
-//         for (int i = 0; i < arr.length; i++) {
-//             if (arr[i] == target) {
-//                 return i;
-//             }
-//         }
-//         return -1;
-//     }
-// }
-int x=arr[0]
+    private static int findTargetIndex(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
+/*int x=arr[0]
 for(int i=0;i<arr.length-1;i++){
 arr[i]=arr[i+1]
 }
@@ -135,4 +135,4 @@ x=arr[0];
 for(int i=1;i<arr.length;i++){
 arr[i-1]=arr[i]
 }
-arr[arr.length-1]
+arr[arr.length-1]*/
