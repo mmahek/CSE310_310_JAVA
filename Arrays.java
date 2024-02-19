@@ -43,4 +43,9 @@ public class Arrays {
             System.out.println(element);
          }         
     }
+
+    public static Object asList(String[] output) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'asList'");
+    }
 }
