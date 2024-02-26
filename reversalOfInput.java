@@ -1,4 +1,4 @@
-public class reversalOfInput {
+/*public class reversalOfInput {
     public static void main(String[] args) {
     //        int i=0;
     //    for(;;){
@@ -22,11 +22,11 @@ public class reversalOfInput {
     System.out.print(ans);
     System.out.println("lodu");
     }
-}
+}*/
 
 import java.util.*;
 
-public class Main {
+public class reversalOfInput {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);

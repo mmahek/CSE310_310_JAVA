@@ -165,8 +165,8 @@ public class patterns {
                 c = c+2;
             }
         }
-   reating and working with
-formulas     //System.out.println();
+   //reating and working with
+//formulas     //System.out.println();
     }
     static void pattern12(int n){
         System.out.println("Pattern 12:");

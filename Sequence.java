@@ -1,4 +1,4 @@
-public class Sequence implements Sequence {
+public class Sequence{
 
     private final double[] c;
 

@@ -117,16 +117,18 @@ public class Strings1{
        for(int i = 0 ; i < output.length ; i++){
         System.out.println(output[i]);
        }
-       Collection.reverse(Arrays.asList(output));
+       //Collection.reverse(Arrays.asList(output));
        System.out.println(String.join(" ", output));
     }
     public static void main(String[] args) {
         /* Strings are immutable?
-        String str = "abc";                       // To optimize the space, if a string already exists which is being created again, new one will point to the previous one only, thus same address. 
+        String str = "abc";
+         // To optimize the space, Java has a concept of String pool. Where if a string already exists which is being created again, new one will point to the previous one only, thus same address. Hence on changing(muting) a string at one place it will be changed everywhere it is referenced.
+         The pool is a part of heap.
         String str2 = new String("abc"); // Whereas, here string is created in heap with new address, thus str2 will point new string at new address. - and hence strings are immutable
         String str3 = new String("abc");
-        //System.out.println(str.equals(str2));
-        // System.out.println(str==str2);
+        //System.out.println(str.equals(str2));// comparing the add
+        // System.out.println(str==str2);// comaping values
         // System.out.println(str==str3);*/
 
        /*// Substring function
@@ -147,11 +149,20 @@ public class Strings1{
         String reversedString = reverseString(ss);
         System.out.println(reversedString);*/
 
-        // Task 1
+       /* // Task 1
         // Reverse the string but words must no be
         Scanner s = new Scanner(System.in);
         System.out.print("Enter the string to be reversed: ");
         String str = s.nextLine();
         System.out.println(reverseString(str));
+        */
+        Integer a = 126;
+        Integer b = 126;
+        for(int i = 0 ; i < 4 ; i++){
+            System.out.print("value of a = " + a + "\t" + "value of b = " + b + "\t");
+            System.out.println( a==b);
+            a++;
+            b++;
+        }
     }
 }

@@ -34,7 +34,7 @@
 //     }
 // }
 // ;
-/*
+
 public class RotatedSortedArraySearcher {
 
     public int search(int[] nums, int target) {
@@ -68,7 +68,7 @@ public class RotatedSortedArraySearcher {
         return -1; // Target not found
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         RotatedSortedArraySearcher searcher = new RotatedSortedArraySearcher();
         int[] nums = { 4, 5, 6, 7, 0, 1, 2 };
         int target = 0;
@@ -76,7 +76,7 @@ public class RotatedSortedArraySearcher {
         System.out.println("Index of " + target + ": " + result);
     }
 }
-
+/*
  class Solution {
  public int search(int[] nums, int target) {
  int low = 0, high = nums.length - 1;
@@ -128,10 +128,10 @@ class Solution {
         return -1;
     }
 }
-*/
+
 import java.util.*;
 
-public class Main {
+public class RotatedSortedArraySearcher {
     public static void righttrotation(int arr[]) {
 
         int x = arr[arr.length - 1];
@@ -183,7 +183,7 @@ public class Main {
         }
         return -1;
     }
-
+*/
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -202,4 +202,4 @@ public class Main {
             System.out.print(arr[i] + " ");
         }
     }
-}*/
+}

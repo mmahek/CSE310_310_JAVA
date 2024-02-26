@@ -40,7 +40,7 @@ public class Constructors{
     public static void main(String[] args) {
         //NewEmployee e1 = new NewEmployee("Arjun", 33); // <-- gets parmeters thus will consider second constructor
         NewEmployee e1 = new NewEmployee(); // <-- This does not gets any inputs(parameters) thus will consider first constructor
-        NewEmployee e1;
+        NewEmployee e2;
         // e1.id = 24;
         // e1.name = "Mahek";//ṇ <-- Throws Error due to private access modifier
 
