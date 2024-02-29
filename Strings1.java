@@ -1,4 +1,5 @@
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.Scanner;
 
@@ -91,7 +92,7 @@ public class Strings1{
      */
     /* 1. Initialize the count with one - (1)my (2)code (3)is (4)java - therefore - 4 words
      */
-    public static int countWords(String str){
+    /*public static int countWords(String str){
         if(str.length() == 0) return 0;
         int count = 1;
         for(int i = 0 ; i < str.length() ; i++){
@@ -100,7 +101,7 @@ public class Strings1{
             }
         }
         return count;
-    }
+    }*/
 
     public static String reverseString(String ss){
         if(ss.length() == 0) return "";
@@ -112,19 +113,17 @@ public class Strings1{
         return output;
     }
 
-    public static void reString(String str){
+    public static void reverseStringWordWise(String str){
        String output[] = str.split(" ");
-       for(int i = 0 ; i < output.length ; i++){
-        System.out.println(output[i]);
-       }
-       //Collection.reverse(Arrays.asList(output));
+       Collections.reverse(Arrays.asList(output));
        System.out.println(String.join(" ", output));
     }
     public static void main(String[] args) {
+
         /* Strings are immutable?
         String str = "abc";
          // To optimize the space, Java has a concept of String pool. Where if a string already exists which is being created again, new one will point to the previous one only, thus same address. Hence on changing(muting) a string at one place it will be changed everywhere it is referenced.
-         The pool is a part of heap.
+         #####The pool is a part of heap.
         String str2 = new String("abc"); // Whereas, here string is created in heap with new address, thus str2 will point new string at new address. - and hence strings are immutable
         String str3 = new String("abc");
         //System.out.println(str.equals(str2));// comparing the add
@@ -135,34 +134,34 @@ public class Strings1{
         String str4 = "abcdefghij"; // -> string will be printed after 5th index, i.e. fghij
         System.out.println(str4.substring(5));*/
 
-        /*// Count the number of words seperated by a space from astring
-        Scanner sc = new Scanner(System.in);
-        extracted();
+        // Count the number of words seperated by a space from astring
+        /*Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the string to count no of words: ");
         String str = sc.nextLine();
         int totalWords = countWords(str);
-        System.out.println(totalWords);*/
+        System.out.println("No of words = " + totalWords);*/
 
-        /*// Reverse a string - completely(each and every alphabet)
-        Scanner s = new Scanner(System.in);
+        // Reverse a string - completely(each and every alphabet)
+        /*Scanner s = new Scanner(System.in);
         System.out.print("Enter the string to reverse: ");
         String ss = s.nextLine();
         String reversedString = reverseString(ss);
         System.out.println(reversedString);*/
 
-       /* // Task 1
+       // Task 1
         // Reverse the string but words must no be
         Scanner s = new Scanner(System.in);
         System.out.print("Enter the string to be reversed: ");
         String str = s.nextLine();
-        System.out.println(reverseString(str));
-        */
+        reverseStringWordWise(str);
+        /*
         Integer a = 126;
         Integer b = 126;
         for(int i = 0 ; i < 4 ; i++){
             System.out.print("value of a = " + a + "\t" + "value of b = " + b + "\t");
             System.out.println( a==b);
             a++;
-            b++;
+            b++;*/
         }
     }
-}
+
