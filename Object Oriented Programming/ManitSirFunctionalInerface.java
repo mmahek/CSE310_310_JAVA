@@ -16,7 +16,7 @@ class I2{
 }
 public class ManitSirFunctionalInerface {
     public static void main(String[] args) {
-        //System.out.println(I1.i); -- correc
+        //System.out.println(I1.i); -- correct
         System.out.println(I2.i);
 
         //Example e1 = new Example(); //  creating object of example class to call overriden function

@@ -9,6 +9,7 @@ class B extends A{ // Entire purpose of this class b is to Override and implment
     
     public void config() {
         System.out.println("In B config");
+        
     }
 }
 
@@ -19,7 +20,9 @@ public class AbstractAnonymous {
         A obj2 = new A(){ // object is created for anonymous inner class below
             // implementation of abstract class
             public void show(){
-                System.out.println("In new Show");
+                int b = 234;
+                int a = String.valueOf(b).length();
+                System.out.println(a);
             }
             public void config(){
                 System.out.println("In new config");
