@@ -6,13 +6,11 @@ class B extends A{ // Entire purpose of this class b is to Override and implment
     public void show(){
         System.out.println("In B show");
     }
-    
     public void config() {
         System.out.println("In B config");
         
     }
 }
-
 public class AbstractAnonymous {
     public static void main(String[] args) {
         A obj1 = new B();
